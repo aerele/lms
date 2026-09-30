@@ -139,8 +139,17 @@
 					}"
 				/>
 
+<<<<<<< HEAD
 				<div class="p-4 border rounded-lg">
 					<BatchFeedback v-if="batch.data" :batch="batch.data.name" />
+=======
+				<div class="p-4 border rounded-6">
+					<BatchFeedback
+						v-if="batch.data"
+						:batch="batch.data.name"
+						:can-manage="Boolean(batch.data?.can_manage)"
+					/>
+>>>>>>> 026ca15 (feat(batch): show tagged Course Creators the batch manage UI)
 				</div>
 			</div>
 		</div>
